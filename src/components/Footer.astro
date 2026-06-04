@@ -1,0 +1,124 @@
+---
+/**
+ * src/components/Footer.astro
+ */
+import { siteConfig } from '../data/index';
+const base = import.meta.env.BASE_URL;
+const year = new Date().getFullYear();
+---
+
+<footer>
+  <p class="footer-logo" aria-label={siteConfig.siteName}>
+    {siteConfig.siteName}
+  </p>
+  <p class="footer-tagline">{siteConfig.tagline}</p>
+
+  <nav aria-label="Pie de página">
+    <ul class="footer-links" role="list">
+      <li><a href={`${base}#inicio`}>Inicio</a></li>
+      <li><a href={`${base}#servicios`}>Servicios</a></li>
+      <li><a href={`${base}#tratamientos`}>Tratamientos</a></li>
+      <li><a href={`${base}#contacto`}>Contacto</a></li>
+      <li>
+        <button
+          id="open-privacy"
+          class="footer-privacy-btn"
+          aria-haspopup="dialog"
+        >
+          Política de Privacidad
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <p class="footer-copy">
+    © {year} {siteConfig.siteName} Centro de Estética · {siteConfig.address}
+  </p>
+</footer>
+
+<!-- WhatsApp floating button -->
+<a
+  href={`https://wa.me/${siteConfig.phone}?text=${encodeURIComponent('Hola! quiero reservar una hora')}`}
+  class="wa-float"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contactar por WhatsApp"
+  title="Reservar por WhatsApp"
+>
+  💬
+</a>
+
+<style>
+  footer {
+    background: var(--c-black);
+    padding: 3.5rem 2rem;
+    text-align: center;
+  }
+
+  .footer-logo {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.8rem;
+    color: var(--c-gold-light);
+    margin-bottom: 0.4rem;
+  }
+  .footer-tagline {
+    font-size: 0.62rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(213, 192, 135, 0.45);
+    margin-bottom: 2rem;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+    margin-bottom: 2rem;
+  }
+  .footer-links a,
+  .footer-privacy-btn {
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(213, 192, 135, 0.4);
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+    transition: color var(--transition-fast);
+    padding: 0;
+  }
+  .footer-links a:hover,
+  .footer-privacy-btn:hover { color: var(--c-gold-light); }
+
+  .footer-copy {
+    font-size: 0.6rem;
+    color: rgba(213, 192, 135, 0.2);
+    letter-spacing: 0.08em;
+  }
+
+  /* WhatsApp floating */
+  .wa-float {
+    position: fixed;
+    bottom: 2rem; right: 2rem;
+    z-index: 200;
+    width: 52px; height: 52px;
+    background: var(--c-black);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    box-shadow: var(--shadow-dark);
+    transition: transform var(--transition-base), background var(--transition-base);
+  }
+  .wa-float:hover {
+    transform: translateY(-2px);
+    background: var(--c-gold-dark);
+  }
+</style>

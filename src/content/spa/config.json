@@ -1,0 +1,17 @@
+{
+  "siteName": "Spa-Capelli",
+  "tagline": "Cuidarte nunca se sintió tan bien",
+  "phone": "56974835260",
+  "instagram": "spa._capelli",
+  "address": "Lo Bascuñán 503, Quilicura",
+  "city": "Santiago, Chile",
+  "hero": {
+    "eyebrow": "Centro de estética integral",
+    "titleLine1": "Belleza &",
+    "titleHighlight": "bienestar",
+    "subtitle": "centro de estética",
+    "description": "Rituales de belleza y bienestar diseñados para ti. Desde tratamientos faciales de última generación hasta masajes relajantes, cada servicio es una experiencia de autocuidado completa.",
+    "image": "/images/hero.jpg",
+    "imageAlt": "Interior del Spa Capelli, ambiente cálido y elegante"
+  }
+}

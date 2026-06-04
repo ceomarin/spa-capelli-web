@@ -1,0 +1,113 @@
+---
+/**
+ * src/components/About.astro
+ */
+import { about, assetUrl } from '../data/index';
+---
+
+<section class="about" id="nosotras" aria-labelledby="about-title">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-img reveal" aria-hidden="true">
+        <img
+          src={assetUrl(about.image)}
+          alt={about.imageAlt}
+          loading="lazy"
+          decoding="async"
+          width="480"
+          height="600"
+        />
+      </div>
+
+      <div class="about-text reveal">
+        <span class="section-label">{about.eyebrow}</span>
+        <h2 class="section-title" id="about-title">
+          {about.titleLine1} <em>{about.titleHighlight}</em>
+        </h2>
+        <div class="section-line"></div>
+        <p>{about.paragraph1}</p>
+        <p>{about.paragraph2}</p>
+
+        <div class="stats" role="list" aria-label="Números del spa">
+          {about.stats.map((stat) => (
+            <div role="listitem">
+              <span class="stat-num" aria-label={`${stat.number} ${stat.label}`}>
+                {stat.number}
+              </span>
+              <span class="stat-label">{stat.label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .about { background: var(--c-cream); }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .about-img {
+    position: relative;
+  }
+  .about-img img {
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+  }
+  .about-img::before {
+    content: '';
+    position: absolute;
+    top: -16px; left: -16px;
+    right: 16px; bottom: 16px;
+    border: 1.5px solid var(--c-gold-cream);
+    z-index: -1;
+  }
+
+  .about-text p {
+    font-size: 0.88rem;
+    color: var(--c-text-soft);
+    line-height: 2;
+    margin-bottom: 1.25rem;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(211, 184, 99, 0.3);
+  }
+
+  .stat-num {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    color: var(--c-gold-dark);
+    display: block;
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--c-text-soft);
+    margin-top: 0.3rem;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .about-img { display: none; }
+    .stats { grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+    .stat-num { font-size: 1.4rem; }
+  }
+</style>

@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "icon": "✂️", "label": "Corte & Color" },
+    { "icon": "💆", "label": "Masajes" },
+    { "icon": "✨", "label": "Faciales" },
+    { "icon": "💅", "label": "Manicure" },
+    { "icon": "🌿", "label": "Tratamientos" },
+    { "icon": "👁️", "label": "Cejas & Pestañas" }
+  ]
+}

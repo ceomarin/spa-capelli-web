@@ -1,0 +1,39 @@
+{
+  "bannerImage": "/images/treatments-banner.jpg",
+  "bannerAlt": "Tratamientos estéticos profesionales en Spa Capelli",
+  "categories": [
+    {
+      "icon": "✨",
+      "name": "Tratamientos Faciales",
+      "items": [
+        { "name": "Limpieza facial profunda", "price": "$22.000" },
+        { "name": "Hidratación intensa con ácido hialurónico", "price": "$28.000" },
+        { "name": "Tratamiento antiage con radiofrec.", "price": "$35.000" },
+        { "name": "Peeling químico suave", "price": "$25.000" },
+        { "name": "Facial contorno de ojos", "price": "$20.000" }
+      ]
+    },
+    {
+      "icon": "💆",
+      "name": "Tratamientos Corporales",
+      "items": [
+        { "name": "Maderoterapia reductiva", "price": "$25.000" },
+        { "name": "Radiofrecuencia corporal", "price": "$35.000" },
+        { "name": "Drenaje linfático manual", "price": "$28.000" },
+        { "name": "Vendas frías reductivas", "price": "$22.000" },
+        { "name": "Combo reductivo 3 en 1", "price": "$55.000" }
+      ]
+    },
+    {
+      "icon": "🌿",
+      "name": "Rituales & Bienestar",
+      "items": [
+        { "name": "Masaje piedras calientes", "price": "$32.000" },
+        { "name": "Ritual aromaterapia", "price": "$28.000" },
+        { "name": "Masaje descontracturante", "price": "$22.000" },
+        { "name": "Masaje relajante 60 min", "price": "$18.000" },
+        { "name": "Reflexología podal", "price": "$20.000" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "eyebrow": "Quiénes somos",
+  "titleLine1": "Belleza que",
+  "titleHighlight": "transforma",
+  "paragraph1": "Somos un centro de estética integral ubicado en Lo Bascuñán 503, Quilicura. Nuestro propósito es acompañarte en tu camino al bienestar, con tratamientos profesionales adaptados a cada persona.",
+  "paragraph2": "Contamos con tecnología de vanguardia y profesionales especializadas en cada área, para que vivas una experiencia de autocuidado completa, segura y de resultados reales.",
+  "image": "/images/about.jpg",
+  "imageAlt": "Especialista realizando tratamiento en Spa Capelli",
+  "stats": [
+    {
+      "number": "10+",
+      "label": "Servicios"
+    },
+    {
+      "number": "6",
+      "label": "Días a la semana"
+    },
+    {
+      "number": "100%",
+      "label": "Personalizado"
+    }
+  ]
+}

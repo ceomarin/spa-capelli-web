@@ -1,0 +1,11 @@
+{
+  "days": [
+    { "day": "Lunes",     "hours": "11:00 – 20:00", "closed": false },
+    { "day": "Martes",    "hours": "11:00 – 20:00", "closed": false },
+    { "day": "Miércoles", "hours": "11:00 – 20:00", "closed": false },
+    { "day": "Jueves",    "hours": "11:00 – 20:00", "closed": false },
+    { "day": "Viernes",   "hours": "11:00 – 20:00", "closed": false },
+    { "day": "Sábado",    "hours": "11:00 – 20:00", "closed": false },
+    { "day": "Domingo",   "hours": "Cerrado",        "closed": true  }
+  ]
+}

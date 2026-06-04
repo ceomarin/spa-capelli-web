@@ -1,0 +1,113 @@
+---
+/**
+ * src/components/Services.astro
+ */
+import { services, waLink } from '../data/index';
+---
+
+<section class="services-section" id="servicios" aria-labelledby="services-title">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Lo que ofrecemos</span>
+      <h2 class="section-title" id="services-title">
+        Nuestros <em>servicios</em>
+      </h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="services-grid" role="list">
+      {services.map((service) => (
+        <article class="service-card reveal" role="listitem">
+          <span class="service-num" aria-hidden="true">{service.number}</span>
+          <h3 class="service-name">{service.name}</h3>
+          <p class="service-desc">{service.description}</p>
+          <p class="service-price">
+            Desde {service.priceFrom}
+            <span>{service.currency}</span>
+          </p>
+        </article>
+      ))}
+    </div>
+
+    <div class="services-cta reveal">
+      <a href={waLink()} class="btn btn-dark" target="_blank" rel="noopener noreferrer">
+        💬 &nbsp;Consultar por un servicio
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .services-section { background: var(--c-cream-2); }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5px;
+    background: rgba(211, 184, 99, 0.2);
+    border: 1.5px solid rgba(211, 184, 99, 0.2);
+    margin-bottom: 2.5rem;
+  }
+
+  .service-card {
+    background: var(--c-cream);
+    padding: 2.25rem 1.75rem;
+    position: relative;
+    transition: background var(--transition-base);
+    overflow: hidden;
+  }
+  .service-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    height: 2px; width: 0;
+    background: linear-gradient(to right, var(--c-gold), var(--c-gold-cream));
+    transition: width 0.4s ease;
+  }
+  .service-card:hover { background: #faf6ec; }
+  .service-card:hover::after { width: 100%; }
+
+  .service-num {
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    color: var(--c-gold);
+    letter-spacing: 0.2em;
+    margin-bottom: 1rem;
+    display: block;
+    opacity: 0.7;
+  }
+  .service-name {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    color: var(--c-black);
+    margin-bottom: 0.6rem;
+  }
+  .service-desc {
+    font-size: 0.77rem;
+    color: var(--c-text-soft);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  .service-price {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    color: var(--c-gold-dark);
+  }
+  .service-price span {
+    font-family: var(--font-body);
+    font-size: 0.62rem;
+    color: var(--c-text-soft);
+    font-weight: 400;
+    margin-left: 3px;
+    letter-spacing: 0.08em;
+  }
+
+  .services-cta { text-align: center; margin-top: 1rem; }
+
+  @media (max-width: 768px) {
+    .services-grid { grid-template-columns: 1fr; }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>

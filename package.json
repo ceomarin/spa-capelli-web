@@ -1,0 +1,19 @@
+{
+  "name": "spa-capelli-web",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tinacms dev -c \"astro dev\"",
+    "dev:astro": "astro dev",
+    "build": "tinacms build && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.11.0"
+  },
+  "devDependencies": {
+    "@astrojs/sitemap": "^3.1.6",
+    "sharp": "^0.33.4"
+  }
+}

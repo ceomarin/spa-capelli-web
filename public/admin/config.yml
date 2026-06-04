@@ -1,0 +1,177 @@
+backend:
+  name: github
+  repo: ceodevops/spa-capelli-web
+  branch: main
+  base_url: sveltia-cms-auth.ceomarin-dev.workers.dev  # OAuth proxy gratuito (ver Paso 5)
+# Modo local para desarrollo (sin OAuth)
+local_backend: true
+media_folder: public/images
+public_folder: /images
+
+locale: es
+
+collections:
+
+  - name: config
+    label: "Configuración del sitio"
+    files:
+      - name: site
+        label: "General + Hero"
+        file: src/content/spa/config.json
+        fields:
+          - { label: "Nombre del sitio", name: siteName, widget: string }
+          - { label: "Tagline", name: tagline, widget: string }
+          - { label: "Teléfono WhatsApp (sin +)", name: phone, widget: string }
+          - { label: "Instagram handle", name: instagram, widget: string }
+          - { label: "Dirección", name: address, widget: string }
+          - { label: "Ciudad", name: city, widget: string }
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: "Título línea 1", name: titleLine1, widget: string }
+              - { label: "Título cursiva dorada", name: titleHighlight, widget: string }
+              - { label: Subtítulo, name: subtitle, widget: string }
+              - { label: Descripción, name: description, widget: text }
+              - { label: Imagen, name: image, widget: image }
+              - { label: "Alt imagen", name: imageAlt, widget: string }
+
+  - name: quick_services
+    label: "Servicios rápidos (barra)"
+    files:
+      - name: items
+        label: "Ítems de la barra"
+        file: src/content/spa/quick-services.json
+        fields:
+          - label: Items
+            name: items
+            widget: list
+            fields:
+              - { label: Icono, name: icon, widget: string }
+              - { label: Etiqueta, name: label, widget: string }
+
+  - name: about
+    label: "Sobre nosotras"
+    files:
+      - name: about
+        label: "Sección nosotras"
+        file: src/content/spa/about.json
+        fields:
+          - { label: Eyebrow, name: eyebrow, widget: string }
+          - { label: "Título línea 1", name: titleLine1, widget: string }
+          - { label: "Título cursiva", name: titleHighlight, widget: string }
+          - { label: "Párrafo 1", name: paragraph1, widget: text }
+          - { label: "Párrafo 2", name: paragraph2, widget: text }
+          - { label: Imagen, name: image, widget: image }
+          - { label: "Alt imagen", name: imageAlt, widget: string }
+          - label: Estadísticas
+            name: stats
+            widget: list
+            fields:
+              - { label: Número, name: number, widget: string }
+              - { label: Etiqueta, name: label, widget: string }
+
+  - name: services
+    label: "Servicios principales"
+    files:
+      - name: services
+        label: "6 servicios con precios"
+        file: src/content/spa/services.json
+        fields:
+          - label: Servicios
+            name: items
+            widget: list
+            fields:
+              - { label: "Número (ej: 01)", name: number, widget: string }
+              - { label: Nombre, name: name, widget: string }
+              - { label: Descripción, name: description, widget: text }
+              - { label: "Precio desde", name: priceFrom, widget: string }
+              - { label: Moneda, name: currency, widget: string, default: CLP }
+
+  - name: treatments
+    label: Tratamientos
+    files:
+      - name: treatments
+        label: "Categorías y precios"
+        file: src/content/spa/treatments.json
+        fields:
+          - { label: "Imagen banner", name: bannerImage, widget: image }
+          - { label: "Alt banner", name: bannerAlt, widget: string }
+          - label: Categorías
+            name: categories
+            widget: list
+            fields:
+              - { label: Icono, name: icon, widget: string }
+              - { label: Nombre, name: name, widget: string }
+              - label: Ítems
+                name: items
+                widget: list
+                fields:
+                  - { label: Nombre, name: name, widget: string }
+                  - { label: Precio, name: price, widget: string }
+
+  - name: why_us
+    label: "¿Por qué elegirnos?"
+    files:
+      - name: why_us
+        label: Tarjetas
+        file: src/content/spa/why-us.json
+        fields:
+          - label: Tarjetas
+            name: cards
+            widget: list
+            fields:
+              - { label: Icono, name: icon, widget: string }
+              - { label: Título, name: title, widget: string }
+              - { label: Descripción, name: description, widget: text }
+
+  - name: testimonials
+    label: Testimonios
+    files:
+      - name: testimonials
+        label: "Testimonios de clientas"
+        file: src/content/spa/testimonials.json
+        fields:
+          - label: Testimonios
+            name: items
+            widget: list
+            fields:
+              - { label: Texto, name: text, widget: text }
+              - { label: Nombre, name: name, widget: string }
+              - { label: Servicio, name: service, widget: string }
+              - { label: "Inicial (avatar)", name: initial, widget: string }
+
+  - name: schedule
+    label: "Horario de atención"
+    files:
+      - name: schedule
+        label: Horario
+        file: src/content/spa/schedule.json
+        fields:
+          - label: Días
+            name: days
+            widget: list
+            fields:
+              - { label: Día, name: day, widget: string }
+              - { label: Horario, name: hours, widget: string }
+              - { label: Cerrado, name: closed, widget: boolean, default: false }
+
+  - name: privacy
+    label: "Política de privacidad"
+    files:
+      - name: privacy
+        label: Política
+        file: src/content/spa/privacy.json
+        fields:
+          - { label: "Última actualización", name: lastUpdate, widget: string }
+          - label: Secciones
+            name: sections
+            widget: list
+            fields:
+              - { label: Título, name: title, widget: string }
+              - { label: Contenido, name: content, widget: text }
+              - label: "Lista de ítems"
+                name: listItems
+                widget: list
+                field: { label: Ítem, name: item, widget: string }

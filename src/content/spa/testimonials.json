@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "text": "Llevaba tiempo buscando un lugar donde se sintiera que realmente les importa el resultado. En Spa Capelli lo encontré. El facial me dejó la piel increíble y la atención fue súper cálida.",
+      "name": "Camila R.",
+      "service": "Tratamiento Facial",
+      "initial": "C"
+    },
+    {
+      "text": "Me hice el tratamiento reductivo con maderoterapia y radiofrecuencia. Noté los resultados desde la primera sesión. Ya llevo cuatro y estoy feliz con mi cuerpo. ¡Totalmente recomendado!",
+      "name": "Valentina M.",
+      "service": "Tratamiento Reductivo",
+      "initial": "V"
+    },
+    {
+      "text": "Me hice las uñas con soft gel y quedaron perfectas, duraron semanas sin chillarse. El ambiente del spa es precioso y se nota que usan productos de calidad. Vuelvo siempre.",
+      "name": "Andrea S.",
+      "service": "Uñas Soft Gel",
+      "initial": "A"
+    }
+  ]
+}

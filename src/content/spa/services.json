@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "number": "01",
+      "name": "Belleza Capilar",
+      "description": "Corte personalizado, coloración, mechas y tratamientos de hidratación profunda. Usamos productos profesionales de última generación para lograr resultados que cuidan y embellecen tu cabello.",
+      "priceFrom": "$8.000",
+      "currency": "CLP"
+    },
+    {
+      "number": "02",
+      "name": "Masajes",
+      "description": "Masajes relajantes y descontracturantes con técnicas especializadas para liberar tensiones musculares, reducir el estrés y reconectar con tu bienestar. Un momento de paz solo para ti.",
+      "priceFrom": "$18.000",
+      "currency": "CLP"
+    },
+    {
+      "number": "03",
+      "name": "Tratamientos Faciales",
+      "description": "Limpiezas profundas, hidratación intensiva y tratamientos antiage con tecnología de última generación. Tu piel en manos de especialistas comprometidas con resultados visibles y duraderos.",
+      "priceFrom": "$22.000",
+      "currency": "CLP"
+    },
+    {
+      "number": "04",
+      "name": "Uñas & Manicure",
+      "description": "Manicure y pedicure clásico, semipermanente y soft gel. Diseños personalizados con productos de larga duración que cuidan la salud de tus uñas mientras lucen perfectas.",
+      "priceFrom": "$10.000",
+      "currency": "CLP"
+    },
+    {
+      "number": "05",
+      "name": "Cejas & Pestañas",
+      "description": "Diseño y depilación de cejas con hilo y cera, tinturas y lifting de pestañas. Define tu mirada con técnicas precisas que realzan tus rasgos naturales.",
+      "priceFrom": "$5.000",
+      "currency": "CLP"
+    },
+    {
+      "number": "06",
+      "name": "Depilación",
+      "description": "Depilación corporal con cera tibia y fría, técnicas para todo tipo de piel. Resultados duraderos y un proceso cuidadoso que minimiza la molestia y cuida tu piel.",
+      "priceFrom": "$7.000",
+      "currency": "CLP"
+    }
+  ]
+}

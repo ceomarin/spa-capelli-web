@@ -1,0 +1,24 @@
+{
+  "cards": [
+    {
+      "icon": "🌿",
+      "title": "Productos premium",
+      "description": "Trabajamos exclusivamente con marcas profesionales certificadas para garantizar resultados óptimos y el cuidado de tu piel y cabello."
+    },
+    {
+      "icon": "👩‍⚕️",
+      "title": "Profesionales especializadas",
+      "description": "Nuestro equipo está en constante formación y actualización para ofrecerte las técnicas más avanzadas del mercado."
+    },
+    {
+      "icon": "✨",
+      "title": "Resultados reales",
+      "description": "Diseñamos tratamientos personalizados con protocolos probados que generan cambios visibles desde la primera sesión."
+    },
+    {
+      "icon": "🕐",
+      "title": "Tu tiempo, tu espacio",
+      "description": "Un ambiente cálido, íntimo y exclusivo donde cada visita es un momento solo para ti."
+    }
+  ]
+}
