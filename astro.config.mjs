@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://ceodevops.github.io/spa-capelli-web',
+  site: 'https://ceomarin.github.io/spa-capelli-web',
   base: '/spa-capelli-web',
   output: 'static',
   build: {

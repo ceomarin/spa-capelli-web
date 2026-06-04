@@ -83,7 +83,7 @@ Coloca los siguientes archivos en `public/images/`:
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/ceodevops/spa-capelli-web.git
+git clone https://github.com/ceomarin/spa-capelli-web.git
 cd spa-capelli-web
 
 # 2. Instalar dependencias
@@ -129,7 +129,7 @@ Cualquier push a `main` dispara el workflow `.github/workflows/deploy.yml` que:
 2. Ejecuta `tinacms build && astro build`
 3. Sube el artefacto a GitHub Pages
 
-El sitio queda disponible en: `https://ceodevops.github.io/spa-capelli-web`
+El sitio queda disponible en: `https://ceomarin.github.io/spa-capelli-web`
 
 ### Deploy manual (opcional)
 

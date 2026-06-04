@@ -1,12 +1,12 @@
 backend:
   name: github
-  repo: ceodevops/spa-capelli-web
+  repo: ceomarin/spa-capelli-web
   branch: main
-  base_url: sveltia-cms-auth.ceomarin-dev.workers.dev  # OAuth proxy gratuito (ver Paso 5)
-# Modo local para desarrollo (sin OAuth)
+  base_url: https://sveltia-cms-auth.ceomarin-dev.workers.dev  
+
 local_backend: true
 media_folder: public/images
-public_folder: /images
+public_folder: /spa-capelli-web/images
 
 locale: es
 
